@@ -168,7 +168,12 @@ function RouteScroll() {
     }
 
     const frame = window.requestAnimationFrame(() => {
-      document.getElementById(id)?.scrollIntoView({ behavior, block: "start" });
+      const section = document.getElementById(id);
+      const header = document.querySelector(".site-header");
+      if (!section || !header) return;
+      const delta =
+        section.getBoundingClientRect().top - header.getBoundingClientRect().bottom;
+      window.scrollBy({ top: delta, behavior });
     });
     return () => cancelAnimationFrame(frame);
   }, [pathname]);
