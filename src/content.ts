@@ -82,33 +82,39 @@ export type TravelResource = {
   name: string;
   href: string;
   blurb: string;
+  kind: string;
 };
 
 export const travelResources: TravelResource[] = [
   {
     name: "My Grand Tour",
     href: "https://grandtourofmine.blogspot.com/?view=mosaic",
+    kind: "Photos",
     blurb:
       "Travel experiences, photos, and stories from around the world.",
   },
   {
     name: "Nomad List",
     href: "https://nomadlist.com/@cliffweng",
+    kind: "Profile",
     blurb: "Digital nomad profile and experiences.",
   },
   {
     name: "Pinterest",
     href: "https://pinterest.com/cliffweng",
+    kind: "Boards",
     blurb: "Travel inspiration boards and collections.",
   },
   {
     name: "AllTrails",
     href: "https://alltrails.com/members/cliffweng",
+    kind: "Trails",
     blurb: "Hiking and trail logs and experiences.",
   },
   {
     name: "Hiking Project",
     href: "https://www.hikingproject.com/user/200123456/cliffweng",
+    kind: "Trails",
     blurb: "Hiking project profile and trail experiences.",
   },
 ];
