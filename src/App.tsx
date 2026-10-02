@@ -300,27 +300,28 @@ function Home() {
 
 function TravelPage() {
   return (
-    <article className="travel-page">
+    <section className="route-lead" id="travel" aria-labelledby="travel-heading">
       <p className="kicker">Travel</p>
-      <h1>Travel</h1>
+      <h1 id="travel-heading">Travel</h1>
       <div className="prose">
         <p>
           Welcome to my travel section! Here you can find links to my various
           travel resources and experiences.
         </p>
       </div>
-      <ul className="resource-list">
+      <ul className="projects">
         {travelResources.map((item) => (
           <li key={item.href}>
-            <Outbound href={item.href}>
-              <h2>{item.name}</h2>
+            <Outbound className="project" href={item.href}>
+              <span className="kind">{item.kind}</span>
+              <h3>{item.name}</h3>
               <p>{item.blurb}</p>
               <span className="go">Open</span>
             </Outbound>
           </li>
         ))}
       </ul>
-    </article>
+    </section>
   );
 }
 
