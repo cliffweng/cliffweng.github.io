@@ -23,7 +23,7 @@ GitHub Pages for this repository publishes the **`gh-pages` branch** at `/`, wit
 
 `.github/workflows/pages.yml` builds on every pull request and uploads `dist` as an artifact. A push to `master` is what publishes: the workflow copies `dist/` onto `gh-pages` and writes the same CNAME. A pull request does not replace the live site.
 
-Paths such as `/study-guides/` are other repositories’ project sites under the user domain. This app is a single page with in-page sections. It does not install a catch-all `404.html`, so those project sites keep their own URLs.
+Paths such as `/study-guides/` are other repositories’ project sites under the user domain. This app does not install a catch-all `404.html`, so those project sites keep their own URLs. In-app pages use a hash router (`/#/`, `/#/about`, `/#/travel`), the same scheme as the earlier React site, so GitHub Pages never rewrites a real path.
 
 ## Preview a pull request
 

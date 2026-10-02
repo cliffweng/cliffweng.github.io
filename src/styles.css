@@ -101,7 +101,70 @@ a:hover {
   align-items: center;
 }
 
-.site-header nav a:hover {
+.site-header nav a:hover,
+.site-header nav a[aria-current="location"] {
+  color: var(--cinnabar);
+}
+
+.nav-menu {
+  position: relative;
+}
+
+.nav-menu > button {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--ink);
+  font: inherit;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.nav-menu > button:hover,
+.nav-menu > button.is-current,
+.nav-menu > button[aria-expanded="true"] {
+  color: var(--cinnabar);
+}
+
+.caret {
+  width: 0;
+  height: 0;
+  margin-left: 0.35rem;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 5px solid currentColor;
+}
+
+.nav-dropdown {
+  position: absolute;
+  top: calc(100% + 0.35rem);
+  right: 0;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  min-width: 16rem;
+  padding: 0.35rem 0;
+  background: var(--paper-2);
+  border: 1px solid var(--line);
+  box-shadow: 0 8px 24px rgba(26, 24, 20, 0.08);
+}
+
+.site-header .nav-dropdown a {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 44px;
+  padding: 0.45rem 0.95rem;
+  color: var(--ink);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.site-header .nav-dropdown a:hover {
+  background: var(--paper);
   color: var(--cinnabar);
 }
 
@@ -343,18 +406,70 @@ h3 {
   margin: 0;
 }
 
+.travel-page {
+  padding-top: 3.5rem;
+  max-width: 42rem;
+}
+
+.travel-page h1 {
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+}
+
+.resource-list {
+  list-style: none;
+  margin: 1.5rem 0 0;
+  padding: 0;
+}
+
+.resource-list li {
+  border-top: 1px solid var(--line);
+}
+
+.resource-list a {
+  display: block;
+  padding: 0.95rem 0;
+  color: inherit;
+  text-decoration: none;
+}
+
+.resource-list a:hover {
+  color: inherit;
+}
+
+.resource-list h2 {
+  margin: 0 0 0.25rem;
+  font-size: 1.25rem;
+  color: var(--ink);
+}
+
+.resource-list p {
+  margin: 0 0 0.45rem;
+  color: var(--muted);
+}
+
+main:focus {
+  outline: none;
+}
+
 @media (max-width: 720px) {
   .roles li,
   .projects {
     grid-template-columns: 1fr;
   }
 
-  .hero {
+  .hero,
+  .travel-page {
     padding-top: 2.2rem;
   }
 
   section {
     padding-top: 2.4rem;
+  }
+
+  .nav-dropdown {
+    left: 0;
+    right: auto;
+    max-width: calc(100vw - 2rem);
   }
 }
 

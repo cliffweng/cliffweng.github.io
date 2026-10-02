@@ -65,6 +65,54 @@ export const skills: string[] = [
   "Computer science education, grades 6–12",
 ];
 
+export type SocialLink = {
+  name: string;
+  href: string;
+};
+
+export const socialLinks: SocialLink[] = [
+  { name: "LinkedIn", href: "https://www.linkedin.com/in/cliffweng/" },
+  { name: "GitHub", href: "https://github.com/cliffweng" },
+  { name: "Facebook", href: "https://facebook.com/cliffweng" },
+  { name: "Twitter", href: "https://twitter.com/cliffweng" },
+  { name: "Instagram", href: "https://instagram.com/cliffweng" },
+];
+
+export type TravelResource = {
+  name: string;
+  href: string;
+  blurb: string;
+};
+
+export const travelResources: TravelResource[] = [
+  {
+    name: "My Grand Tour",
+    href: "https://grandtourofmine.blogspot.com/?view=mosaic",
+    blurb:
+      "Travel experiences, photos, and stories from around the world.",
+  },
+  {
+    name: "Nomad List",
+    href: "https://nomadlist.com/@cliffweng",
+    blurb: "Digital nomad profile and experiences.",
+  },
+  {
+    name: "Pinterest",
+    href: "https://pinterest.com/cliffweng",
+    blurb: "Travel inspiration boards and collections.",
+  },
+  {
+    name: "AllTrails",
+    href: "https://alltrails.com/members/cliffweng",
+    blurb: "Hiking and trail logs and experiences.",
+  },
+  {
+    name: "Hiking Project",
+    href: "https://www.hikingproject.com/user/200123456/cliffweng",
+    blurb: "Hiking project profile and trail experiences.",
+  },
+];
+
 export const projects: Project[] = [
   {
     name: "Study Guides",

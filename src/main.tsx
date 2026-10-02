@@ -1,5 +1,6 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
+import { HashRouter } from "react-router-dom";
 import "@fontsource/source-serif-4/latin-400.css";
 import "@fontsource/source-serif-4/latin-600.css";
 import "@fontsource/source-serif-4/latin-ext-400.css";
@@ -18,6 +19,8 @@ if (!root) {
 
 createRoot(root).render(
   <StrictMode>
-    <App />
+    <HashRouter>
+      <App />
+    </HashRouter>
   </StrictMode>,
 );
