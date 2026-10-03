@@ -118,13 +118,6 @@ export const travelResources: TravelResource[] = [
 
 export const projects: Project[] = [
   {
-    name: "Study Guides",
-    href: "https://cliffweng.com/study-guides/",
-    kind: "Site",
-    blurb:
-      "Short public guides for engineering, finance, and founders. The directory lives on its own page.",
-  },
-  {
     name: "Hot Topics",
     href: "https://hot-topics-nine.vercel.app",
     kind: "Live app",
