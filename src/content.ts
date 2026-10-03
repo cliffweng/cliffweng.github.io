@@ -58,9 +58,12 @@ export const roles: Role[] = [
 export const skills: string[] = [
   "Fixed-income analytics",
   "Quantitative software",
+  "Enterprise system",
+  "Distributed system",
+  "Straight-through Processing",
+  "Financial Markets",
   "LLM applications",
   "Agents",
-  "Retrieval-augmented generation",
   "Tool use",
   "Computer science education, grades 6–12",
 ];
