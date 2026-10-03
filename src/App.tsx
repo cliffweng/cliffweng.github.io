@@ -37,7 +37,7 @@ function Outbound({
   );
 }
 
-function SocialList({ includeStudyGuides = false }: { includeStudyGuides?: boolean }) {
+function SocialList() {
   return (
     <>
       {socialLinks.map((link) => (
@@ -45,7 +45,6 @@ function SocialList({ includeStudyGuides = false }: { includeStudyGuides?: boole
           {link.name}
         </Outbound>
       ))}
-      {includeStudyGuides ? <a href={studyGuidesUrl}>Study Guides</a> : null}
     </>
   );
 }
@@ -142,7 +141,7 @@ function SiteFooter() {
     <footer className="site-footer">
       <p>Cliff Weng · New York</p>
       <p>
-        <SocialList includeStudyGuides />
+        <SocialList />
       </p>
     </footer>
   );
@@ -192,7 +191,7 @@ function Home() {
           analytics, quantitative tools, and LLM applications.
         </p>
         <p className="hero-links">
-          <SocialList includeStudyGuides />
+          <SocialList />
         </p>
       </section>
 
@@ -239,26 +238,13 @@ function Home() {
         </dl>
       </section>
 
-      <section id="study-guides" className="guides" aria-labelledby="guides-heading">
-        <p className="kicker">Guides</p>
-        <h2 id="guides-heading">Study Guides</h2>
-        <p>
-          Engineering, finance, and founder notes live in one public
-          directory. Open that site from here.
-        </p>
-        <a className="button" href={studyGuidesUrl}>
-          Open study guides
-        </a>
-      </section>
-
       <section id="experience" aria-labelledby="experience-heading">
         <p className="kicker">Experience</p>
         <h2 id="experience-heading">Where I have worked</h2>
         <ol className="roles">
           {roles.map((role) => (
-            <li key={`${role.org}-${role.dates}`}>
-              <div className="role-when">
-                <span>{role.dates}</span>
+            <li key={role.org}>
+              <div className="role-where">
                 <span>{role.place}</span>
               </div>
               <div>

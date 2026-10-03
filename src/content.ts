@@ -1,7 +1,6 @@
 export type Role = {
   title: string;
   org: string;
-  dates: string;
   place: string;
   summary: string;
 };
@@ -17,15 +16,13 @@ export const roles: Role[] = [
   {
     title: "Managing Director, Enterprise",
     org: "Numerix",
-    dates: "Aug 2023 – Present",
     place: "New York City",
     summary:
-      "PolyPaths was acquired by Numerix in August 2023. I continue here as Managing Director, Enterprise.",
+      "PolyPaths was acquired by Numerix. I continue here as Managing Director, Enterprise.",
   },
   {
     title: "Managing Director",
     org: "PolyPaths",
-    dates: "Apr 2000 – Aug 2023",
     place: "New York City",
     summary:
       "Designed and managed development of enterprise fixed-income analytics software used by major dealers and fixed-income funds.",
@@ -33,14 +30,12 @@ export const roles: Role[] = [
   {
     title: "Founder",
     org: "Fairway Financial",
-    dates: "Jan 1999 – Jan 2000",
     place: "New York City",
     summary: "Partnership and hedge-fund accounting software firm.",
   },
   {
     title: "Senior Technologist",
     org: "Citadel Investment Services",
-    dates: "Jan 1998 – Jan 1999",
     place: "Chicago",
     summary:
       "Developed a securities-lending and repo system and integrated it with upstream and downstream systems.",
@@ -48,7 +43,6 @@ export const roles: Role[] = [
   {
     title: "VP, Software Analyst",
     org: "Paloma Partners Management Company",
-    dates: "Jan 1994 – Jan 1999",
     place: "Greenwich, Connecticut",
     summary:
       "Developed ISIS, a securities-lending and repo system used by a global team. The system was later spun off and sold to a client.",
@@ -123,13 +117,6 @@ export const travelResources: TravelResource[] = [
 ];
 
 export const projects: Project[] = [
-  {
-    name: "Study Guides",
-    href: "https://cliffweng.com/study-guides/",
-    kind: "Site",
-    blurb:
-      "Short public guides for engineering, finance, and founders. The directory lives on its own page.",
-  },
   {
     name: "Hot Topics",
     href: "https://hot-topics-nine.vercel.app",
