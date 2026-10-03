@@ -256,9 +256,8 @@ function Home() {
         <h2 id="experience-heading">Where I have worked</h2>
         <ol className="roles">
           {roles.map((role) => (
-            <li key={`${role.org}-${role.dates}`}>
-              <div className="role-when">
-                <span>{role.dates}</span>
+            <li key={role.org}>
+              <div className="role-where">
                 <span>{role.place}</span>
               </div>
               <div>
