@@ -127,10 +127,10 @@ function SiteHeader() {
       </Link>
       <nav aria-label="Primary">
         <SectionLink to="/about">About</SectionLink>
-        <a href={studyGuidesUrl}>Study Guides</a>
         <SectionLink to="/experience">Experience</SectionLink>
         <SectionLink to="/skills">Skills</SectionLink>
         <SectionLink to="/projects">Projects</SectionLink>
+        <a href={studyGuidesUrl}>Study Guides</a>
         <TravelMenu />
       </nav>
     </header>
