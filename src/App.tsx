@@ -37,7 +37,7 @@ function Outbound({
   );
 }
 
-function SocialList({ includeStudyGuides = false }: { includeStudyGuides?: boolean }) {
+function SocialList() {
   return (
     <>
       {socialLinks.map((link) => (
@@ -45,7 +45,6 @@ function SocialList({ includeStudyGuides = false }: { includeStudyGuides?: boole
           {link.name}
         </Outbound>
       ))}
-      {includeStudyGuides ? <a href={studyGuidesUrl}>Study Guides</a> : null}
     </>
   );
 }
@@ -142,7 +141,7 @@ function SiteFooter() {
     <footer className="site-footer">
       <p>Cliff Weng · New York</p>
       <p>
-        <SocialList includeStudyGuides />
+        <SocialList />
       </p>
     </footer>
   );
@@ -192,7 +191,7 @@ function Home() {
           analytics, quantitative tools, and LLM applications.
         </p>
         <p className="hero-links">
-          <SocialList includeStudyGuides />
+          <SocialList />
         </p>
       </section>
 
@@ -237,18 +236,6 @@ function Home() {
             <dd>National Taiwan University</dd>
           </div>
         </dl>
-      </section>
-
-      <section id="study-guides" className="guides" aria-labelledby="guides-heading">
-        <p className="kicker">Guides</p>
-        <h2 id="guides-heading">Study Guides</h2>
-        <p>
-          Engineering, finance, and founder notes live in one public
-          directory. Open that site from here.
-        </p>
-        <a className="button" href={studyGuidesUrl}>
-          Open study guides
-        </a>
       </section>
 
       <section id="experience" aria-labelledby="experience-heading">
