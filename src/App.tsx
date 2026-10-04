@@ -197,7 +197,7 @@ function Home() {
 
       <section id="about" aria-labelledby="about-heading">
         <p className="kicker">About</p>
-        <h2 id="about-heading">Quant, founder, engineer</h2>
+        <h2 id="about-heading">husband, father, founder, engineer</h2>
         <div className="prose">
           <p>
             I was born 翁偉峯 to 翁哲雄 and 王麗君 on a Taiwan Sugar plantation
@@ -220,7 +220,7 @@ function Home() {
             Numerix acquired PolyPaths in August 2023, and I stayed on.
           </p>
           <p>
-            Elaine and I are raising three boys in New York. They are my joy
+            Elaine and I raised 3 boys in Westport, CT. They are my joy
             and pride, and my sunshine. Away from the models I write study
             guides and small software — quant tools, agent workflows, and a
             coding road map for kids.
