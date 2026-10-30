@@ -186,6 +186,7 @@ function Home() {
             PolyPaths in August 2023, and I am Managing Director, Enterprise at
             Numerix.
           </p>
+          <p>Since 2020 I have invested in 17 startups as an angel investor.</p>
         </div>
         <ol className="roles">
           {roles.map((role) => (
